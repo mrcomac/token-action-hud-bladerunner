@@ -36,7 +36,7 @@
     "scripts/module.js"
   ],
   "styles": [
-    "styles/token-action-bladerunner.css"
+    "styles/token-action-hud-bladerunner.css"
   ],
   "url": "https://github.com/mrcomac/token-action-hud-blade-runner",
   "manifest": "https://github.com/mrcomac/token-action-hud-bladerunner/releases/latest/download/module.json",
