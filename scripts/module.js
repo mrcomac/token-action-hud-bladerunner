@@ -19,7 +19,7 @@ function chatItem(message,actor) {
 Hooks.on('tokenActionHudCoreApiReady', async (coreModule) => {
     BRSystemManager = class BRSystemManager extends coreModule.api.SystemManager {
         /** @override */
-        doGetActionHandler() {
+        getActionHandler() {
             return new BRActionHandler()
         }
 
@@ -31,7 +31,7 @@ Hooks.on('tokenActionHudCoreApiReady', async (coreModule) => {
         }
 
         /** @override */
-        doGetRollHandler(handlerId) {
+        getRollHandler(handlerId) {
             let rollHandler
             rollHandler = new CoreRoll()
             return rollHandler
@@ -42,7 +42,7 @@ Hooks.on('tokenActionHudCoreApiReady', async (coreModule) => {
             systemSettings.register(updateFunc)
         }*/
 
-        async doRegisterDefaultFlags() {
+        async registerDefaults() {
             const GROUP = {
                 stats: { id: 'stats', name: coreModule.api.Utils.i18n('FLBR.TAB.Stats'), type: 'system' },
                 skills: { id: 'skills', name: coreModule.api.Utils.i18n('FLBR.Skills'), type: 'system' },
@@ -152,7 +152,7 @@ Hooks.on('tokenActionHudCoreApiReady', async (coreModule) => {
 
     const module = game.modules.get('token-action-hud-blade-runner');
     module.api = {
-        requiredCoreModuleVersion: '1.4',
+        requiredCoreModuleVersion: '1.5',
         SystemManager: BRSystemManager
     }
     Hooks.call('tokenActionHudSystemReady', module)

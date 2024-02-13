@@ -2,7 +2,7 @@
   "id": "token-action-hud-blade-runner",
   "title": "Token Action HUD for Blade Runner",
   "description": "Provide support for the Blade Runner game system with Token Action HUD Core",
-  "version": "0.0.1",
+  "version": "placeholder",
   "compatibility": {
     "minimum": "11",
     "verified": "11.305",
@@ -38,9 +38,9 @@
   "styles": [
     "styles/token-action-hud-bladerunner.css"
   ],
-  "url": "https://github.com/mrcomac/token-action-hud-blade-runner",
+  "url": "https://github.com/mrcomac/token-action-hud-bladerunner",
   "manifest": "https://github.com/mrcomac/token-action-hud-bladerunner/releases/latest/download/module.json",
-  "download": "https://github.com/mrcomac/token-action-hud-bladerunner/releases/download/0.0.1/token-action-hud-bladerunner.zip",
+  "download": "placeholder",
   "license": "LICENSE",
   "readme": "README.md"
 }

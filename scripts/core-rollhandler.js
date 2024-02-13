@@ -3,7 +3,7 @@ export let BRRollHandler = null
 Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
     BRRollHandler = class BRRollHandler extends coreModule.api.RollHandler {
         
-        async doHandleActionEvent(event, encodedValue) {
+        async handleActionClick(event, encodedValue) {
             const decoded = encodedValue.split("|");
             let typeAction = decoded[0]
             let typeActor = decoded[1]
