@@ -38,9 +38,9 @@ Hooks.on('tokenActionHudCoreApiReady', async (coreModule) => {
         }
 
         /** @override */
-        /*doRegisterSettings (updateFunc) {
-            systemSettings.register(updateFunc)
-        }*/
+        registerSettings (updateFunc) {
+            //systemSettings.register(updateFunc)
+        }
 
         async registerDefaults() {
             const GROUP = {
