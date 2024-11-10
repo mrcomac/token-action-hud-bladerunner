@@ -52,6 +52,28 @@ jobs:
         body: ${{ github.event.release.body }}
     
     # Submit to foundry
+    # Publish version to foundry
+    - name: Get Module ID
+      id: moduleID
+      uses: notiz-dev/github-action-json-property@release
+      with:
+        path: "./module.json"
+        prop_path: "id"
+
+    - name: Get mininum
+      id: minimum
+      uses: notiz-dev/github-action-json-property@release
+      with:
+        path: "./module.json"
+        prop_path: "compatibility.minimum"
+
+    - name: Get verified
+      id: verified
+      uses: notiz-dev/github-action-json-property@release
+      with:
+        path: "./module.json"
+        prop_path: "compatibility.verified"
+
     - name: Submit package to FoundryVTT Package Release API
       run: |
         curl -X POST "https://api.foundryvtt.com/_api/packages/release_version/" \
