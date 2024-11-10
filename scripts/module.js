@@ -143,7 +143,7 @@ Hooks.on('tokenActionHudCoreApiReady', async (coreModule) => {
                 ],
                 groups: groupsArray
             }
-            game.tokenActionHud.defaults = DEFAULTS
+            //game.tokenActionHud.defaults = DEFAULTS
             return DEFAULTS
         }
     }
@@ -152,7 +152,7 @@ Hooks.on('tokenActionHudCoreApiReady', async (coreModule) => {
 
     const module = game.modules.get('token-action-hud-blade-runner');
     module.api = {
-        requiredCoreModuleVersion: '1.5',
+        requiredCoreModuleVersion: '2.0',
         SystemManager: BRSystemManager
     }
     Hooks.call('tokenActionHudSystemReady', module)
