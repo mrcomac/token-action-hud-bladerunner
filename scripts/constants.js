@@ -1,6 +1,6 @@
 
 
-export const MODULEDIR = 'modules/token-action-hud-blade-runner/'
+export const MODULEDIR = 'modules/token-action-hud-bladerunner/'
 export const IMG_DICE = MODULEDIR + 'assets/'
 export const SYSDIR = 'systems/swade/'
 export const ICONSDIR = SYSDIR + 'assets/icons/'

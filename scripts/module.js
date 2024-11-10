@@ -150,7 +150,7 @@ Hooks.on('tokenActionHudCoreApiReady', async (coreModule) => {
 
     /* STARTING POINT */
 
-    const module = game.modules.get('token-action-hud-blade-runner');
+    const module = game.modules.get('token-action-hud-bladerunner');
     module.api = {
         requiredCoreModuleVersion: '2.0',
         SystemManager: BRSystemManager
